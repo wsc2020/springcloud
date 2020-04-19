@@ -1,5 +1,5 @@
 server:
-  port: 9101
+  port: 9001
 spring: #服务名称
   application:
     name: microservice-user
