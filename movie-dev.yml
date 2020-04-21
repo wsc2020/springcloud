@@ -3,6 +3,13 @@ server:
 spring:
   application:
     name: microservice-movie
+  zipkin:
+    base-url: http://127.0.0.1:9041
+    sender:
+      type: web
+  sleuth:
+    sampler:
+      probability: 1
 eureka:
   client:
     fetch-registry: true # 是否需要从Eureka获取注册信息
