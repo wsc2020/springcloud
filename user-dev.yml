@@ -12,6 +12,13 @@ spring: #服务名称
     show-sql: true # 是否打印sql语句
     generate-ddl: true # 是否自动建表
     database: mysql # jpa连接的数据库类型
+  zipkin:
+    base-url: http://127.0.0.1:9041
+    sender:
+      type: web
+  sleuth:
+    sampler:
+      probability: 1
 eureka:
   client:
     fetch-registry: true # 是否需要从Eureka获取注册信息
